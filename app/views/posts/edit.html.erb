@@ -1,0 +1,11 @@
+<h1>Edit</h1>
+<%= form_for :post, url: post_path(@post), method: :patch do  |f| %>
+
+
+<p>
+  <%= f.text_area :body %>
+</p>
+
+<p>
+  <%= f.submit 'Publish', ({:class => 'btn btn-defaut'})  %>
+<% end %>

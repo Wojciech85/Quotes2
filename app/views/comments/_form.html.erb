@@ -1,0 +1,15 @@
+<h3>Add comment</h3>
+<%= form_for ([@post, @post.comments.build]) do |f| %>
+<p>
+<%= f.label :'username_' %><br>
+<%= f.text_field :username %>
+</p>
+
+<p>
+<%= f.label :'comment' %><br>
+<%= f.text_area :body %>
+</p>
+
+<p>
+<%= f.submit 'Publish', ({:class => 'btn btn-primary'})  %>
+<% end %>

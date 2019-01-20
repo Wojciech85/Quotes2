@@ -1,0 +1,7 @@
+<h1>Add quote</h1>
+<%= form_for :post, url: posts_path do |f| %>
+
+
+<p><%= f.text_area :body %></p>
+<%= f.submit 'Publish', ({:class => 'btn btn-primary'})  %>
+<% end %>
